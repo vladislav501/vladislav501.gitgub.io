@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Показать текущий год</title>
+    <script>
+        function showCurrentYear() {
+            // Создаем объект Date для получения текущей даты
+            var currentDate = new Date();
+            // Получаем текущий год
+            var currentYear = currentDate.getFullYear();
+            // Выводим год в диалоговом окне
+            alert("Текущий год: " + currentYear);
+        }
+    </script>
+    
+</head>
+<body>
+
+<button onclick="showCurrentYear()">Показать год</button>
+
+<script>
+    var lastName = "Творовский";
+    var firstName = "Влад";
+  
+    for (var i = 0; i < 24; i++) {
+      document.write(lastName + " " + firstName + "<br>");
+    }
+</script>
+
+<script>
+    // Создание массива из 5 целых элементов
+    var numbers = [8, 3, -11, 5, -2, 0, -3];
+     // Вывод исходного массива
+    document.write("Исходный массив: " + numbers.join(", ") + "<br>");
+    // Поиск минимального элемента в массиве
+    var minNumber = Math.min(...numbers);
+    // Сортировка массива по возрастанию
+    numbers.sort(function(a, b) {
+      return a - b;
+    });
+    // Вывод минимального элемента
+    document.write("Минимальный элемент: " + minNumber + "<br>");
+    // Вывод отсортированного массива
+    document.write("Отсортированный массив: " + numbers.join(", ") + "<br>");
+</script>
+
+</body>
+</html>

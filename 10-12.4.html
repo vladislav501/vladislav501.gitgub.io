@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Работа с объектом Math</title>
+<script src="1.js"></script>
+</head>
+<body>
+    <script>
+ // Создаем строковые переменные s1 и s2
+ var s1 = "Я люблю Беларусь";
+var s2 = "Я учусь в Политехническом колледже";
+
+// 1. Определить длину строки s1
+var lengthOfS1 = s1.length;
+console.log("Длина строки s1: " + lengthOfS1);
+
+// 2. Выделить n-ый символ в строке s1 и определить ASCII-код этого символа (n=19)
+var n = 19;
+var nthCharacter = s1.charAt(n - 1);
+var asciiCode = nthCharacter.charCodeAt(0);
+console.log("n-ый символ в строке s1: " + nthCharacter);
+console.log("ASCII-код этого символа: " + asciiCode);
+
+// 3. Заменить в строке s2 все встречающиеся буквы "о" на "а"
+var replacedString = s2.replace(/о/g, 'а');
+document.write("Измененная строка s2: " + replacedString );
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+div{
+    border: none;
+}
+.all{
+    width: 1000px;
+}
+body{
+    margin: 0;
+    border: 0;
+}
+.col1{
+    display: flex;
+}
+.pr90{
+    width: 1000px;
+    background-color: blueviolet;
+}
+.pr10{
+    width: 50px;
+    background-color: blue;
+}
+.col2{
+    display: flex;
+    width: 1000px;
+    background-color: blueviolet;
+}
+.pr100{
+    width: 1000px;
+    background-color: aqua;
+}
+.col3{
+    display: flex;
+}
+.pr25{
+    width: 250px;
+    background-color: burlywood;
+}
+#first{
+    background-color: brown;
+}
+.pr50{
+    width: 500px;
+    background-color: cadetblue;
+}
+.col4{
+    display: flex;
+}
+.pr75{
+    width: 775px;
+    background-color: chocolate;
+}
+.col5{
+    display: flex;
+}
+#sec{
+    background-color: darkcyan;
+}
+.main{
+    display: flex;
+    width: 1000px;
+}

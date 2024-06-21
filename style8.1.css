@@ -1,0 +1,94 @@
+body{
+    background-color: #ffe57d;
+}
+.card{
+    padding-top: 20px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #fff;
+    
+}
+.tovar_nedeli_pic{
+    display: flex;
+    justify-content: center;
+}
+.tovar_nedeli_img{
+    max-width: 100px;
+}
+.mini_like_i_card{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.halva_pic{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+.kuller_pic{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.min_text{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;    
+    color: gray;
+}
+.more_min_text{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+#red_text{
+    color:red;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.gray_text{
+    color:gray;
+    text-decoration: line-through;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.block1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 10px;
+}
+#card_img{
+    height: 30px;
+}
+#card_text{
+    font-size: 30px;
+}
+#bold_text{
+    font-weight: 900;
+}
+#shtrih{
+    text-decoration: none;
+    border-bottom: 2px dashed #32557f;
+    padding-bottom: 3px;
+}
+.purp_block{
+    background-color: purple;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+
+}
+#d_text{
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1050px) {
+    span{
+        font-size: 14px;
+    }
+}
+    

@@ -1,0 +1,149 @@
+/* Стили для body */
+@import "background.css";
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #333; /* Цвет текста */
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+  
+a:hover {
+    text-decoration: underline; /* Подчеркиваем ссылку при наведении */
+}
+a:active {
+    color: crimson;
+}
+/* Стили для списка */
+ul {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+}
+ li:nth-child(even){
+    color:rgb(255, 0, 43);
+}
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #bcb6f3; /* Границы таблицы */
+    padding: 8px;
+}
+#Telega[href]{
+    font-size: 30px;
+}
+th {
+    background-color: #b5beee; /* Цвет фона заголовка таблицы */
+}
+
+/* Стили для фотографии */
+img {
+    border-radius: 35%; /* Скругление углов */
+}
+
+/* Стили для аудио и видео */
+audio, video {
+    margin-top: 10px;
+}
+
+/* Стили для статьи */
+article {
+    margin-top: 20px;
+}
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    font-size-adjust: none;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+/* Стили для подвала */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+/* Стили для списка кнопок */
+.button-list {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0;
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Используем flexbox */
+}
+
+
+
+/* Стили для кнопок */
+.button {
+    padding: 1px 1px; /* Отступы внутри кнопки */
+    background-color: #5586d1; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    margin-right: 30px; /* Отступ между кнопками */
+}
+
+.button:last-child {
+    margin-right: 0; /* Убираем отступ у последней кнопки */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+/* Стили для кнопки входа */
+.login-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 85px; /* Отступ от верхнего края */
+    right: 10px; /* Отступ от правого края */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #9ce6e6; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    display: flex; /* Используем flexbox для выравнивания элементов внутри кнопки */
+    align-items: center; /* Выравниваем элементы по вертикали */
+}
+/* Стили для кнопки регистрации */
+.reg-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20px; /* Отступ от верхнего края */
+    right: 10px; /* Отступ от правого края */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    background-color: #9ce6e6; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    text-align: center; /* Выравниваем текст по центру */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    border: none; /* Убираем границы кнопки */
+    border-radius: 5px; /* Скругление углов кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    display: flex; /* Используем flexbox для выравнивания элементов внутри кнопки */
+    align-items: center; /* Выравниваем элементы по вертикали */
+
+}
+
+/* Стили для иконки */
+.icon {
+    margin-right: 5px; /* Отступ между иконкой и текстом */
+    font-size: 16px; /* Размер иконки */
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+

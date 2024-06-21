@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Стиль таблицы -->
+      <style>
+        table {
+            border-collapse: collapse;
+            width: 66%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя HTML-страница</title>
+    <link href="css/style.css" rel="stylesheet">
+ <!-- Мета-теги -->
+<meta content="Моя веб-страница" name="description">
+<meta content="Ваше имя" name="author">
+</head>
+<body>
+    <!-- Заголовок -->
+<h1>Мое первое html </h1>
+<!-- Навигация -->
+<nav>
+    <ul class="button-list">
+        <li><a href="#skills" class="button">Мои навыки</a></li>
+        <li><a href="#foto" class="button">Фото</a></li>
+        <li><a href="#project" class="button">Проекты</a></li>
+        <li><a href="#sot" class="button">Телеграм</a></li>
+        <li><a href="#audio" class="button">Аудио</a></li>
+        <li><a href="#video" class="button">Видео</a></li>
+        <li><a href="log.html" class="login-button">Вход</a></li>
+        <li><a href="reg.html" class="reg-button">Зарегистрироваться</a></li>
+    </ul>
+</nav>
+
+ 
+
+
+
+<!-- Абзац -->
+<p>Привет! Я - Владислэйв.</p>
+
+
+<!-- Список навыков -->
+<h2 id="skills">Мои навыки в IT:</h2>
+<ul>
+    <li>HTML</li>
+    <li>C#</li>
+    <li>Python</li>
+</ul>
+
+
+    
+
+
+    <!-- Изображение -->
+    <h2 id="foto">Мои фотографии:</h2>
+    <img src="image/SIGMA.jpg" width="400" height="400" alt="Моя фотография">
+
+    
+
+     
+
+  
+    
+    <!-- Таблица -->
+    <h2 id="project">Мои проекты на GitHub:</h2>
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Ссылка</th>
+        </tr>
+        <tr>
+            <td>1 проект</td>
+            <td><a href="https://github.com/vladislav501/TRPO2-40-01-01.33.37.19.2023">Ссылка</a></td>
+        </tr>
+        <tr>
+            <td>2 проект</td>
+            <td><a href="https://github.com/vladislav501/IncreasingWorm">Ссылка</a></td>
+        </tr>
+    </table>
+
+    <!-- Гиперссылки -->
+    <h2 id="sot">Соцсети:</h2>
+    <ul>
+        <li><a href="https://t.me/vl4d3k69">telegram</a></li>
+        
+    </ul>
+
+    <!-- Спецсимволы -->
+    <p>Спец символ "©" означает авторские права.</p>
+
+    <!-- Семантические теги -->
+    <article>
+        <h2>Статья о веб-разработке</h2>
+        <p>Здесь текст статьи...</p>
+    </article>
+
+     <!-- Аудио -->
+     <h2 id="audio">Музыка:</h2>
+     <section>
+         <h3>Аудио файл</h3>
+         <audio controls>
+             <source src="audio/Adam.mp3" type="audio/mpeg">   
+         </audio>
+     </section>
+
+    <!-- Видео -->
+    <h2 id="video">Видео:</h2>
+    <section>
+        <h3>Видео файл</h3>
+        <video width="320" height="240" controls>
+            <source src="video/mel.mp4" type="video/mp4">
+        </video>
+    </section>
+     <!-- форма -->
+    <h1 id="form">Регистрация</h1>
+    <a href="reg.html">Зарегистрироваться</a>
+    <h1>Вход</h1>
+    <a href="log.html">Вход в аккаунт</a>
+    
+</body>
+</html>
