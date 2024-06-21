@@ -1,0 +1,707 @@
+body { 
+    font-family: Inter, sans-serif; 
+    margin: 0; /* Убираем стандартные отступы */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #ffffff;
+    padding: 10px 20px; /* Отступы справа и слева от контента шапки */
+  }
+  
+  .header img {
+    width: 139.48px;
+    height: 30px;
+    margin-right: 20px; /* Отступ справа от логотипа */
+    opacity: 1;
+  }
+  
+  .bl1 {
+    display: flex;
+    align-items: left;
+
+  }
+
+  .btn {
+    display: flex ;
+    align-items: left;
+  }
+
+  .header .nav { 
+    display: block;
+    margin-left: 0; /* Убираем автоматический отступ слева */
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding: 10px;
+
+  }
+  
+  .nav a { 
+    color: gray;
+    text-align: center;
+    padding: 10px 20px 10px  20px;
+    text-decoration: none;
+    margin-right: 10px; /* Отступ между ссылками навигации */
+  }
+  
+  .nav a:last-child { 
+    margin-right: 0; /* У последней ссылки навигации не будет отступа справа */
+  }
+  
+  .nav a:hover { 
+    background-color: #e9e3e3;
+    color: black;
+    border-radius: 999px;
+  }
+  
+  .login-btn, .register-btn {
+    padding: 10px 30px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 10px; /* Отступ слева от кнопок */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background: #F2F7FF;
+    color: #015DFD;
+  }
+  
+  .register-btn {
+    background: #5D3AEF;
+    color: #FFFFFF;
+  }
+  .bl2{
+    background-image: url(image/Vector\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    background-color: #ffffff;
+    padding: 20px 80px; 
+
+  }
+  /* Голосовий робот для дзвінків від 1,7 ₴ за хвилину розмови */
+  .tex1{
+  
+  padding: 0px 100px 0px 0px ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  display: grid;
+  grid-template-rows: 50px 300px 100px 50px;
+
+  /* text */
+  
+  }
+
+  .tex2{
+  
+    padding: 0px 100px 0px 0px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    display: grid;
+    grid-template-rows: 50px 150px 220px;
+  
+    /* text */
+    
+    }
+
+  .silka-btn{
+    padding: 8px 16px 8px 16px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 0px; /* Отступ слева от кнопок */
+    border: none;
+    cursor: pointer;
+    background:#015DFD0D;
+    color: #015DFD;
+  }
+  .bltext2{
+    font-weight: 600;
+      font-size: 60px;
+      line-height: 68px; 
+      margin: 0%;
+  }
+  .bltext3{
+  color: gray;
+  
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.1px;
+  text-align: left;
+
+  }
+
+  .bltext4{
+    font-weight: 600;
+      font-size: 45px;
+      line-height: 68px; 
+      margin: 0%;
+  }
+
+  .btn-text1{
+    padding: 15px 30px 15px 30px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 0px; /* Отступ слева от кнопок */
+    border: none;
+    cursor: pointer;
+    background: #5D3AEF;
+    color: #FFFFFF;
+  }
+
+  .bl3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 80px; 
+  }
+
+  .block1{
+    width: 291px;
+    height: 304px;
+    top: 862px;
+    left: 102px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF3;
+    box-shadow: 0px 18px 38px 0px #EEF2F7;
+    display: flexbox;
+    align-items: center;
+    /* padding: 45px 32px 33px 32px; */
+    
+
+  }
+  .block2{
+    width: 291px;
+    height: 304px;
+    top: 862px;
+    left: 417px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF3;
+    box-shadow: 0px 18px 38px 0px #EEF2F7;
+
+  }
+  .block3{
+    width: 291px;
+    height: 304px;
+    top: 862px;
+    left: 732px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF3;
+    box-shadow: 0px 18px 38px 0px #EEF2F7;
+
+  }
+  .block4{
+    width: 291px;
+    height: 304px;
+    top: 862px;
+    left: 1047px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF3;
+    box-shadow: 0px 18px 38px 0px #EEF2F7;
+
+  }
+  .block5{
+  width: 450px;
+  height: 450px;
+  top: 505px;
+  left: 102px;
+  gap: 0px;
+  border-radius: 12px ;
+  border: 10px 10px 10px 10px;
+  opacity: 0px;
+  
+  background-image: url(image/clipboard-img.png);
+  background-size: cover;
+  }
+  .block6{
+    width: 450px;
+  height: 450px;
+    top: 505px;
+    left: 523px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    
+    background-image: url(image/clipboard-img\ \(1\).png);
+    background-size: cover;
+    }
+    .block7{
+      width: 450px;
+  height: 450px;
+      top: 505px;
+      left: 102px;
+      gap: 0px;
+      border-radius: 12px ;
+      border: 10px 10px 10px 10px;
+      opacity: 0px;
+      
+      background-image: url(image/clipboard-img\ \(2\).png);
+      background-size: cover;
+      }
+
+.block8{
+    width: 396px;
+    height: 500px;
+    top: 2641px;
+    left: 102px;
+    gap: 0px;
+    border-radius: 12px ;
+    border: 10px 10px 10px 10px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #EBEEF3;
+    box-shadow: 0px 18px 38px 0px #EEF2F7
+}
+
+.block9{
+  width: 396px;
+  height: 500px;
+  top: 2641px;
+  left: 522px;
+  gap: 0px;
+  border-radius: 12px ;
+  border: 10px 10px 10px 10px;
+  opacity: 0px;
+  background: #FFFFFF;
+  border: 1px solid #EBEEF3;
+  box-shadow: 0px 18px 38px 0px #EEF2F7
+}
+
+.block10{
+  width: 396px;
+  height: 500px;
+  top: 2641px;
+  left: 942px;
+  gap: 0px;
+  border-radius: 12px ;
+  border: 10px 10px 10px 10px;
+  opacity: 0px;
+  background: #FFFFFF;
+  border: 1px solid #EBEEF3;
+  box-shadow: 0px 18px 38px 0px #EEF2F7
+}
+  .conteiner1{
+    padding: 45px 32px 33px 32px;
+    margin: auto;
+  }
+  .conteiner3{
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+  }
+  .txt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21.78px;
+    text-align: center;
+
+  }
+  .txt1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 21.78px;
+    text-align: left;
+    
+
+  }
+
+  .bl4{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 80px; 
+  }
+
+  .bl5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;   
+    padding: 0px 80px; 
+    
+  }
+  
+  .bl6{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+  }
+  
+  .fon{
+    width: 100%;
+    gap: 0px;
+    border-radius: 12px 12px 12px 12px;
+    opacity: 0px;
+    background-image: url(image/clipboard-img\ \(3\).png);
+    background-size: cover; 
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+  }
+
+  .tex3{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 68px; 
+    margin: 0%;
+    color: #FFFFFF;
+    padding: 40px 40px 100px 40px;
+  }
+
+  .Next{
+    width: 400px;
+    align-items: left;
+    background: #ffffff00;
+    color: #FFFFFF;
+    font-size: 25px;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  .bl7{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 80px; 
+  }
+
+  .im1{
+    display: flex;
+    padding-left: 48px;
+    padding-right: 48px;
+    
+  }
+
+.silka-btn1{
+  padding: 8px 16px 8px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 0px; /* Отступ слева от кнопок */
+  border: none;
+  cursor: pointer;
+  background:#015DFD0D;
+  color: #015DFD;
+}
+
+.silka-btn2{
+  padding: 8px 16px 8px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 0px; /* Отступ слева от кнопок */
+  border: none;
+  cursor: pointer;
+  background:#015DFD0D;
+  color: #015DFD;
+}
+
+.silka-btn3{
+  padding: 8px 16px 8px 16px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 0px; /* Отступ слева от кнопок */
+  border: none;
+  cursor: pointer;
+  background:#015DFD0D;
+  color: #015DFD;
+}
+
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.im3{
+  display: flex;
+  position: center;
+  margin-left: 70px ;
+  cursor: pointer;
+}
+
+.bl8{
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-rows: 30px 80px ;
+}
+
+.tex4{
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+
+.tex5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spacepick{
+  display: flex;
+  width: auto;
+  padding: 20px 220px;  
+}
+
+.spacepick1{
+  display: flex;
+  width: auto;
+  padding: 20px 300px;  
+}
+.bl9{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 80px; 
+}
+.fon1{
+  background-image: url(image/clipboard-img\ \(9\).png);
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  
+}
+
+.conteiner4{
+  margin-top: 15%;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 800px;
+  color: #FFFFFF;
+  line-height: 15px;
+  margin-bottom: 80px;
+  
+}
+
+.button1{
+  font-size: 20px;
+  display: block;
+  margin-top: 5%;
+  color:#ffffff;
+  background-color: #F7931D;
+  border-radius: 999px;
+  border: none;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 20px 15px;
+}
+
+.button2{
+  font-size: 15px;
+  display: block;
+  margin-top: none;
+  color:#ffffff;
+  background-color: #F7931D;
+  border-radius: 999px;
+  border: none;
+  font-weight: 200;
+  cursor: pointer;
+  padding: 13px 15px;
+}
+
+.bl10{
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 80px; 
+}
+
+.tex7{
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 58.09px;
+text-align: left;
+margin: 10px 0px 10px 0px;
+
+}
+
+.bl11{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 80px; 
+}
+
+.imagefor1{
+  width: 291px;
+  height: 304px;
+  background-image: url(image/clipboard-img\ \(10\).png);
+  background-size: cover;
+}
+.imagefor2{
+  width: 291px;
+  height: 304px;
+  background-image: url(image/clipboard-img\ \(11\).png);
+  background-size: cover;
+}
+.imagefor3{
+  width: 291px;
+  height: 304px;
+  background-image: url(image/clipboard-img\ \(12\).png);
+  background-size: cover;
+}
+.imagefor4{
+  width: 291px;
+  height: 304px;
+  background-image: url(image/clipboard-img\ \(13\).png);
+  background-size: cover;
+}
+
+#fixedButton {
+  position: fixed;
+  z-index: 100;
+  bottom: 4%;
+  right: 4%;
+  background-color: rgb(211, 211, 211, 50%) ;
+  border-radius: 100%;
+  border:none;
+  height: 70px;
+  width: 70px;
+  /* Дополнительные стили (цвет, размер, шрифт и т. д.) */
+}
+button{
+  cursor: pointer;
+}
+.for_button{
+  position: relative;
+}
+
+.icon1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left:35% ;
+}
+
+.bl12{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 80px; 
+}
+
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 1600px;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 80px; 
+}
+
+.slide {
+  flex: none;
+  scroll-snap-align: start;
+  width: 50%;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+.bl13{
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 80px; 
+}
+
+.bl14{
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 20px 80px; 
+}
+
+.tex10{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.tex11{
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+
+
+  @media (min-width: 480px) {
+    .header {
+      padding: 20px 40px; /* Увеличиваем отступы справа и слева */
+    }
+  }
+  
+  
+  
+  
+  @media (min-width: 800px) {
+    .header {
+      padding: 20px 80px; /* Максимальные отступы для больших экранов */
+    }
+  }
+  
+
