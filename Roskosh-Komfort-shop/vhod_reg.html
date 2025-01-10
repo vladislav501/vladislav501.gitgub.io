@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход / Регистрация</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/vhod_reg.css">
+</head>
+<body>
+    <div class="container">
+        <button class="back-button" onclick="window.history.back()"><a style="text-decoration: none;" href="/index.html">Назад</a></button>
+        <!-- Блок входа -->
+        <div class="form-container" id="login-panel">
+            <h2>Вход</h2>
+            <form action="/login" method="POST">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="email" placeholder="Введите ваш email" required>
+                <label for="login-password">Пароль</label>
+                <input type="password" id="login-password" name="password" placeholder="Введите ваш пароль" required>
+                <button type="submit">Войти</button>
+            </form>
+            <button class="switch-button" id="switch-to-register" onclick="showRegister()">Регистрация</button>
+        </div>
+        
+        <!-- Блок регистрации -->
+        <div class="form-container hidden" id="register-panel">
+            <h2>Регистрация</h2>
+            <form action="/register" method="POST">
+                <label for="register-name">Имя</label>
+                <input type="text" id="register-name" name="name" placeholder="Введите ваше имя" required>
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="email" placeholder="Введите ваш email" required>
+                <label for="register-password">Пароль</label>
+                <input type="password" id="register-password" name="password" placeholder="Придумайте пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <button class="switch-button" id="switch-to-login" onclick="showLogin()">Войти</button>
+        </div>
+    </div>
+    <script src="/js/vhod_reg.js"></script>
+</body>
+</html>
