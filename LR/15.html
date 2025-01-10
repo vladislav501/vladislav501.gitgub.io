@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Class</title>
+</head>
+<body>
+    <script>
+        class User {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            greet() {
+                document.write(`Hello, my name is ${this.name}<br>`);
+            }
+
+            deleteAge() {
+                delete this.age;
+            }
+
+            hasProperty(prop) {
+                return prop in this;
+            }
+
+            printProperties() {
+                let properties = '';
+                for (let key in this) {
+                    properties += `${key}: ${this[key]}`;
+                }
+                document.write(`${properties}`);
+            }
+        }
+
+        // Пример использования класса
+        const user = new User("Влад", 18);
+        user.greet(); // Выводит приветствие на страницу
+        document.write(`Has age property: ${user.hasProperty('age')}<br>`); // true
+        user.deleteAge();
+        document.write(`Has age property after deletion: ${user.hasProperty('age')}<br>`); // false
+        user.printProperties(); // Выводит свойства на страницу
+    </script>
+</body>
+</html>

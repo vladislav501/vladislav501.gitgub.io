@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Events</title>
+    <style>
+        #dragable {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+        #scrollable {
+            width: 200px;
+            height: 200px;
+            overflow: auto;
+            border: 1px solid black;
+        }
+       
+        #body {margin:10px;
+        border: 1px solid blue;}
+
+    </style>
+</head>
+<body>
+
+<h1>Interface Events</h1>
+
+<!-- Mouse Events -->
+<button id="mouseButton">Click Me</button>
+<div id="mouseMoveArea" style="width: 200px; height: 200px; border: 1px solid black;">Move mouse over me</div>
+
+<!-- Keyboard Events -->
+<input id="keyboardInput" type="text" placeholder="Type something">
+<div id="vivod">Исходный текст</div>
+<button onclick="updateDiv()">Обнавить див</button>
+
+<!-- Drag and Drop -->
+<div id="dragable" draggable="true">Drag Me</div>
+
+<!-- Scroll Events -->
+<div id="scrollable">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+</div>
+
+<!-- Touch Events (for touch devices) -->
+<div id="touchArea" style="width: 200px; height: 200px; border: 1px solid black;">Touch me</div>
+
+<!-- Timer Events -->
+<button id="timerButton">Start Timer</button>
+<p id="timerOutput"></p>
+
+<script>
+    // Mouse Events
+    document.getElementById('mouseButton').addEventListener('click', function() {
+        alert('Button clicked!');
+    });
+
+    document.getElementById('mouseMoveArea').addEventListener('mousemove', function(event) {
+        console.log(`Mouse moved to (${event.clientX}, ${event.clientY})`);
+        
+    });
+
+    // Keyboard Events
+    document.getElementById('keyboardInput').addEventListener('keydown', function(event) {
+        console.log(`Key pressed: ${event.key}`);
+        
+    });
+
+    function updateDiv(){
+        document.getElementById('vivod').textContent = newText;
+    }
+
+    // Drag and Drop
+    let dragable = document.getElementById('dragable');
+    dragable.addEventListener('dragstart', function(event) {
+        event.dataTransfer.setData('text', event.target.id);
+        console.log('Drag started');
+    });
+
+    document.body.addEventListener('dragover', function(event) {
+        event.preventDefault();
+    });
+
+    document.body.addEventListener('drop', function(event) {
+        event.preventDefault();
+        let data = event.dataTransfer.getData('text');
+        event.target.appendChild(document.getElementById(data));
+        console.log('Dropped');
+    });
+
+    // Scroll Events
+    document.getElementById('scrollable').addEventListener('scroll', function() {
+        console.log('Scrolled');
+    });
+
+    // Touch Events (for touch devices)
+    document.getElementById('touchArea').addEventListener('touchstart', function(event) {
+        console.log('Touch started');
+    });
+
+    document.getElementById('touchArea').addEventListener('touchmove', function(event) {
+        console.log(`Touch moved to (${event.touches.clientX}, ${event.touches.clientY})`);
+    });
+
+    document.getElementById('touchArea').addEventListener('touchend', function() {
+        console.log('Touch ended');
+    });
+
+    // Timer Events
+    let timerInterval;
+    document.getElementById('timerButton').addEventListener('click', function() {
+        if (!timerInterval) {
+            timerInterval = setInterval(function() {
+                document.getElementById('timerOutput').innerText = new Date().toLocaleTimeString();
+            }, 1000);
+        } else {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+    });
+</script>
+
+  
+    <h1>Использование событий в JavaScript</h1>
+    <div id="output"></div>
+
+    <!--<script src="script15.js"></script>-->
+    
+    <input value ="Нажми меня" onclick= "alert('Клик!')" type="button">
+
+    <script>
+     function countRabbits()
+     {
+       for(let i=1; i<=3; i++)
+      { alert ("Кролик номер " + i); 
+     }
+    }
+     </script>
+     <input type="button" onclick="countRabbits()" value="Count Rabbits">
+
+
+     <input id="elem" type ="button" value = "Нажми меня!"/> 
+     <script>
+      elem.onclick= function() {
+        alert ('Спасибо!');
+      };
+      </script>
+
+
+    <button onclick ="alert (this.innerHTML)">Нажми меня</button>
+     
+    
+    <input id="elem" type="button" value="Нажми меня" />
+<script>
+    function handler1() {
+        alert('Спасибо!');
+    };
+    function handler2() {
+        alert('Спасибо ещё раз!');
+    }
+    elem.onclick = () => alert("Привет");
+    elem.addEventListener("click", handler1); // Corrected typo here
+    elem.addEventListener("click", handler2);
+</script>
+
+<form onclick="alert('form')">
+  FORM
+  <div onclick="alert('div')">
+    DIV
+    <p onclick="alert('p')">P</p>
+  </div>
+</form>
+
+		
+		
+  </body>
+</html>
